@@ -4,6 +4,12 @@ let capability;
 
 let question = prompt ("How many droids You want to buy?");
 
+while (question/question != 1) {
+    alert ('Введите, пожалуйста, число');
+    question = prompt ("How many droids You want to buy?");
+    continue;
+}
+
 if (question == null) {
     console.log ('Отменено пользователем!');
 }

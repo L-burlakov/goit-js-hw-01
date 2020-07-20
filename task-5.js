@@ -6,8 +6,11 @@ const india = 80;
 const jamaica = 120;
 
 let question = prompt("Пожалуйста, укажите страну доставки");
-question = question.toUpperCase();
-if (question != null) {
+if (question == null) {
+    console.log ('Отменено пользователем!');
+}
+else {
+    question = question.toUpperCase();
     switch (question) {
         case 'КИТАЙ':
             alert (`Доставка в ${question} будет стоить ${china} кредитов`);
@@ -27,5 +30,6 @@ if (question != null) {
         default:
             alert (`В вашей стране доставка не доступна`);
             break;
-    }                     
+                    
+        }                     
 }
